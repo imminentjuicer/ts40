@@ -685,7 +685,19 @@ label{
     background-color: #F24949 !important;
 }
 
+.fixed .wrapper {
+    overflow: hidden;
+}
 
+.fixed-top{
+    position: fixed;
+    width: 100%;
+    /* z-index: -1 !important; */
+}
+
+.container_land{
+    margin-top: 50px;
+}
 
 .logo-mini{
     
@@ -700,4 +712,31 @@ label{
     .form-horizontal .control-label {
         padding-top: 0px !important;
     }
+}
+
+.spinner {
+    display: inline-block;
+    opacity: 0;
+    max-width: 0;
+    -webkit-transition: opacity 0.25s, max-width 0.45s;
+    -moz-transition: opacity 0.25s, max-width 0.45s;
+    -o-transition: opacity 0.25s, max-width 0.45s;
+    transition: opacity 0.25s, max-width 0.45s;
+    /* Duration fixed since we animate additional hidden width */
+  }
+.select2-dropdown{
+    z-index: 99999 !important;
+}
+.select2-selection{
+    border-radius: 0px !important;
+
+    border-color: #d2d6de !important;
+    padding-left: 0px !important;
+    padding-bottom: 5px !important;
+    padding-top: 6px !important;
+    margin-bottom: 2px !important;
+}
+
+.select2-container .select2-selection--single{
+    height: 34px !important;
 }
