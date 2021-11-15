@@ -733,10 +733,14 @@ label{
     border-color: #d2d6de !important;
     padding-left: 0px !important;
     padding-bottom: 5px !important;
-    padding-top: 6px !important;
+    padding-top: 7px !important;
     margin-bottom: 2px !important;
 }
 
 .select2-container .select2-selection--single{
     height: 34px !important;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow{
+top:4px !important;
 }
