@@ -157,15 +157,19 @@ body {
     background: #5bbaff;
 }
 .guest-check-out {
-    /*background: #9F9F9F;*/
-    /*background: #90a4ae;*/
-    background: #d5d5d5;
+    /* background: #9F9F9F; */
+    background: #90a4ae;
+    /* background: #d5d5d5; */
 }
 .guest-maintenance {
     /* background: #FF5722; */
     /* background: #dd4b39; */
     /* background: #FF043F; */
     background: #FF5722;
+}
+.guest-engine {
+    background: #0071C2;
+    /* background: #0071c2; */
 }
 
 .gocupacy {
