@@ -1,4 +1,4 @@
-function avp(start_date, end_date, id_room, disponible){
+function avp(start_date, end_date, id_room, disponible, property_id, hotel_account_id){
     prepare_obj = {}
     // prepare_obj.room_id = 907738602
     prepare_obj.room_id = id_room
@@ -20,7 +20,8 @@ function avp(start_date, end_date, id_room, disponible){
     let ses = document.location.href.split('ses=')[1].split('&')[0];
     
     var xhr = new XMLHttpRequest();
-    xhr.open("POST", `https://admin.booking.com/fresa/extranet/inventory/update?lang=es&ses=${ses}&hotel_id=9077386&hotel_account_id=15017980`, true);
+    // xhr.open("POST", `https://admin.booking.com/fresa/extranet/inventory/update?lang=es&ses=${ses}&hotel_id=9077386&hotel_account_id=15017980`, true);
+    xhr.open("POST", `https://admin.booking.com/fresa/extranet/inventory/update?lang=es&ses=${ses}&hotel_id=${property_id}&hotel_account_id=${hotel_account_id}`, true);
     xhr.setRequestHeader("Content-Type", "application/json; charset=utf-8");
     // xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
     xhr.onreadystatechange = function () {
@@ -36,7 +37,6 @@ function avp(start_date, end_date, id_room, disponible){
 function chrome_ranges(data){
     for (let i = 0; i < data.length; i++) {
         const el = data[i];
-        avp(el.d, el.d, el.r, el.a);
+        avp(el.d, el.d, el.r, el.a, el.hi, el.ha);
     }
 }
-
