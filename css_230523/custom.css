@@ -396,6 +396,18 @@ body {
     margin-left: 5px;
     text-transform: uppercase;
 }
+.icon-month-bar {
+    padding-top: 5px;
+    position: relative;
+    font-weight: 900;
+    color: #fff;
+    font-size: 13px;
+    cursor: pointer;
+    /* width: 53px; */
+    text-align: center;
+    margin-left: 5px;
+    text-transform: uppercase;
+}
 
 .item_select {
     text-align: center;
