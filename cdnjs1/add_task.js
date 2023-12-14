@@ -59,7 +59,7 @@ function retrieve_list(){
   const params = objectToUrlParams(prepare_obj);
 
   var xhr = new XMLHttpRequest();
-  xhr.open("POST", `https://admin.booking.com/fresa/extranet/reservations/retrieve_list?${params}`, true);
+  xhr.open("POST", `https://admin.booking.com/fresa/extranet/reservations/retrieve_list_v2?${params}`, true);
   xhr.setRequestHeader("Content-Type", "application/json; charset=utf-8");
 
   xhr.setRequestHeader("x-booking-client-info", 'function(){return Je.a.tracked&&Je.a.tracked()}');
